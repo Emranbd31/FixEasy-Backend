@@ -1,12 +1,11 @@
 #!/bin/bash
+
 echo "🚀 Auto-deploying FixEasy frontend..."
 
 git add .
 git commit -m "Auto build & deploy"
 git push origin main
 
-echo "🔧 Building and deploying to Vercel..."
-npx vercel build --prod --yes
-npx vercel deploy --prebuilt --prod --yes
+echo "🔄 Waiting for Vercel GitHub integration to build & deploy https://fixeasy.irish..."
 
-echo "✅ FixEasy successfully rebuilt & deployed!"
+echo "✅ FixEasy changes pushed! Vercel will publish the production build automatically."
