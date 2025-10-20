@@ -86,7 +86,7 @@ export default function Design5() {
             flexDirection: 'column',
             alignItems: 'center'
           }}>
-            <img src="/images/worker-illustration.png" alt="FixEasy professionals" style={{ width: '180px', marginBottom: '1.5rem', borderRadius: '12px' }} />
+            <img src="/images/worker-illustration.png.png" alt="FixEasy professionals" style={{ width: '180px', marginBottom: '1.5rem', borderRadius: '12px' }} />
             <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Why Choose Us</h3>
             <ul style={{ listStyle: 'none', lineHeight: '2' }}>
               <li>✓ Licensed & Insured Professionals</li>

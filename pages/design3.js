@@ -9,7 +9,7 @@ export default function Design3() {
   ];
 
   return (
-    <div style={{ fontFamily: 'system-ui, sans-serif', background: '#111827', color: 'white', minHeight: '100vh' }}>
+  <div style={{ fontFamily: 'system-ui, sans-serif', background: 'linear-gradient(135deg, #169B62 0%, #FFFFFF 50%, #FF883E 100%)', color: '#222', minHeight: '100vh' }}>
       <style dangerouslySetInnerHTML={{__html: `
         * { margin: 0; padding: 0; box-sizing: border-box; }
       `}} />
@@ -40,45 +40,57 @@ export default function Design3() {
 
       {/* Hero */}
       <section style={{
-        background: 'linear-gradient(to bottom, #111827, #1F2937)',
-        padding: '5rem 2rem',
-        textAlign: 'center'
+        background: 'rgba(255,255,255,0.85)',
+        borderRadius: '32px',
+        margin: '3rem auto',
+        maxWidth: '900px',
+        boxShadow: '0 8px 32px rgba(0,0,0,0.08)',
+        padding: '3rem 2rem',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '3rem',
+        flexWrap: 'wrap'
       }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <img src="/images/worker-illustration.png" alt="FixEasy professionals" style={{ width: '200px', marginBottom: '2rem', borderRadius: '16px' }} />
-          <div style={{
-            display: 'inline-block',
-            background: 'linear-gradient(135deg, #F59E0B, #10B981)',
-            padding: '0.5rem 1.5rem',
-            borderRadius: '25px',
-            fontSize: '0.9rem',
-            fontWeight: '600',
-            marginBottom: '2rem'
-          }}>
-            ✨ Premium Home Services
-          </div>
-          <h2 style={{ fontSize: '3.5rem', fontWeight: '900', marginBottom: '1.5rem', lineHeight: '1.2' }}>
-            Elite Professionals<br />
-            <span style={{ background: 'linear-gradient(135deg, #F59E0B, #10B981)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-              At Your Service
-            </span>
+        <div style={{ flex: 1, minWidth: '320px' }}>
+          <h2 style={{ fontSize: '2.5rem', fontWeight: '800', marginBottom: '1.5rem', color: '#169B62', lineHeight: '1.2' }}>
+            Trusted Professionals.<br />Verified for Your Peace of Mind.
           </h2>
-          <p style={{ fontSize: '1.25rem', color: '#9CA3AF', marginBottom: '2rem' }}>
-            Experience luxury home services with our handpicked professionals
+          <p style={{ fontSize: '1.15rem', color: '#333', marginBottom: '2rem' }}>
+            Hire experienced and vetted pros for all your home needs.
           </p>
           <button style={{
-            background: 'linear-gradient(135deg, #F59E0B, #FBBF24)',
-            color: '#111827',
+            background: '#1976D2',
+            color: 'white',
             border: 'none',
-            padding: '1rem 2.5rem',
-            borderRadius: '8px',
-            fontSize: '1.1rem',
+            padding: '0.85rem 2rem',
+            borderRadius: '12px',
             fontWeight: '700',
+            fontSize: '1.1rem',
+            boxShadow: '0 2px 8px rgba(25, 118, 210, 0.15)',
             cursor: 'pointer',
-            boxShadow: '0 8px 24px rgba(251, 191, 36, 0.3)'
-          }}>
-            Book Premium Service
-          </button>
+            marginBottom: '2rem'
+          }}>Book a Service</button>
+          <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
+            <div style={{ background: '#E3FCEC', borderRadius: '12px', padding: '1rem 1.5rem', textAlign: 'center', minWidth: '120px' }}>
+              <div style={{ fontWeight: '700', fontSize: '1.3rem', color: '#169B62' }}>Painting</div>
+              <div style={{ color: '#555', fontSize: '0.95rem' }}>Available 24/7</div>
+            </div>
+            <div style={{ background: '#FFF4E3', borderRadius: '12px', padding: '1rem 1.5rem', textAlign: 'center', minWidth: '120px' }}>
+              <div style={{ fontWeight: '700', fontSize: '1.3rem', color: '#FF883E' }}>Gardening</div>
+              <div style={{ color: '#555', fontSize: '0.95rem' }}>Available 24/7</div>
+            </div>
+            <div style={{ background: '#E3FCEC', borderRadius: '12px', padding: '1rem 1.5rem', textAlign: 'center', minWidth: '120px' }}>
+              <div style={{ fontWeight: '700', fontSize: '1.3rem', color: '#169B62' }}>Carpentry</div>
+              <div style={{ color: '#555', fontSize: '0.95rem' }}>Available 24/7</div>
+            </div>
+            <div style={{ background: '#FFF4E3', borderRadius: '12px', padding: '1rem 1.5rem', textAlign: 'center', minWidth: '120px' }}>
+              <div style={{ fontWeight: '700', fontSize: '1.3rem', color: '#FF883E' }}>Plumbing</div>
+              <div style={{ color: '#555', fontSize: '0.95rem' }}>Available 24/7</div>
+            </div>
+          </div>
+        </div>
+        <div style={{ flex: 1, minWidth: '320px', textAlign: 'center' }}>
+          <img src="/images/worker-illustration.png.png" alt="FixEasy professionals" style={{ width: '260px', borderRadius: '18px', boxShadow: '0 4px 24px rgba(0,0,0,0.08)' }} />
         </div>
       </section>
 
