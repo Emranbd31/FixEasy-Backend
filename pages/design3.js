@@ -44,7 +44,8 @@ export default function Design3() {
         padding: '5rem 2rem',
         textAlign: 'center'
       }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <img src="/images/worker-illustration.png" alt="FixEasy professionals" style={{ width: '200px', marginBottom: '2rem', borderRadius: '16px' }} />
           <div style={{
             display: 'inline-block',
             background: 'linear-gradient(135deg, #F59E0B, #10B981)',
