@@ -25,3 +25,24 @@ body {
     color: #888;
     font-size: 1rem;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .animate-slideX {
+        animation: slideX 1.8s cubic-bezier(0.4,0,0.2,1) both;
+    }
+    .animate-slideX-reverse {
+        animation: slideX-reverse 1.8s cubic-bezier(0.4,0,0.2,1) both;
+    }
+    @keyframes slideX {
+        0% { transform: translateX(60px); opacity: 0; }
+        100% { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes slideX-reverse {
+        0% { transform: translateX(-60px); opacity: 0; }
+        100% { transform: translateX(0); opacity: 1; }
+    }
+}
