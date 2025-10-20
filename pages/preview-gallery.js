@@ -1,4 +1,6 @@
-﻿export default function PreviewGallery() {
+﻿import Link from "next/link";
+
+export default function PreviewGallery() {
   const designs = [
     { id: 1, name: "Sky Blue Clean", description: "Clean blue design with prominent hero image", colors: ["#0369A1", "#E0F2FE", "#FFFFFF"], preview: "/design1" },
     { id: 2, name: "Minimalist Slate", description: "Professional slate design with hero focus", colors: ["#334155", "#F8FAFC", "#FFFFFF"], preview: "/design2" },
@@ -11,5 +13,33 @@
     { id: 9, name: "Rose Pink", description: "Elegant rose design with hero image", colors: ["#E11D48", "#FFF1F2", "#FFFFFF"], preview: "/design9" },
     { id: 10, name: "Professional Gray", description: "Clean gray design with hero image", colors: ["#475569", "#F1F5F9", "#FFFFFF"], preview: "/design10" }
   ];
-  return <div style={{minHeight:'100vh',background:'linear-gradient(to bottom, #F9FAFB, #F3F4F6)',padding:'2rem'}}><div style={{maxWidth:'1400px',margin:'0 auto'}}><div style={{textAlign:'center',marginBottom:'3rem'}}><h1 style={{fontSize:'3rem',fontWeight:'800',background:'linear-gradient(135deg, #8B5CF6, #EC4899)',WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent',marginBottom:'1rem'}}>Choose Your Design</h1><p style={{fontSize:'1.25rem',color:'#6B7280',maxWidth:'600px',margin:'0 auto'}}>Select from 10 modern homepage designs with hero images.</p></div><div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit, minmax(350px, 1fr))',gap:'2rem',marginBottom:'3rem'}}>{designs.map(d=><div key={d.id} onClick={()=>window.location.href=d.preview} style={{background:'white',borderRadius:'16px',padding:'2rem',boxShadow:'0 4px 12px rgba(0,0,0,0.08)',cursor:'pointer'}}><div style={{display:'inline-block',background:'linear-gradient(135deg, #8B5CF6, #EC4899)',color:'white',fontSize:'0.875rem',fontWeight:'600',padding:'0.25rem 0.75rem',borderRadius:'50px',marginBottom:'0.75rem'}}>Design {d.id}</div><h3 style={{fontSize:'1.5rem',fontWeight:'700',color:'#111827',marginBottom:'0.5rem'}}>{d.name}</h3><p style={{color:'#6B7280',fontSize:'0.95rem',lineHeight:'1.6',marginBottom:'1rem'}}>{d.description}</p><div style={{display:'flex',gap:'0.5rem',marginBottom:'1.5rem'}}>{d.colors.map((c,i)=><div key={i} style={{width:'40px',height:'40px',borderRadius:'50%',border:'3px solid white',boxShadow:'0 2px 8px rgba(0,0,0,0.1)',background:c}}/>)}</div><button style={{width:'100%',padding:'0.875rem',background:'linear-gradient(135deg, #8B5CF6, #EC4899)',color:'white',border:'none',borderRadius:'12px',fontSize:'1rem',fontWeight:'600',cursor:'pointer'}}>Preview Design </button></div>)}</div></div></div>;
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-10 px-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-600 to-pink-500 bg-clip-text text-transparent mb-4">Choose Your Design</h1>
+          <p className="text-lg text-gray-600 max-w-xl mx-auto">Select from 10 modern homepage designs with hero images.</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {designs.map(d => (
+            <Link key={d.id} href={d.preview} className="block group">
+              <div className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition flex flex-col h-full cursor-pointer border border-gray-100 group-hover:-translate-y-1 group-hover:scale-[1.02] duration-200">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="inline-block bg-gradient-to-r from-blue-600 to-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full">Design {d.id}</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">{d.name}</h3>
+                <p className="text-gray-500 text-sm mb-4 flex-1">{d.description}</p>
+                <div className="flex gap-2 mb-4">
+                  {d.colors.map((c, i) => (
+                    <span key={i} className="w-7 h-7 rounded-full border-2 border-white shadow" style={{ background: c }}></span>
+                  ))}
+                </div>
+                <button className="w-full py-2 bg-gradient-to-r from-blue-600 to-pink-500 text-white rounded-lg font-semibold shadow hover:from-pink-500 hover:to-blue-600 transition">Preview Design →</button>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }
