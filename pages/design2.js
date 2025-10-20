@@ -1,4 +1,38 @@
 export default function Design2() {
+  return (
+    <div style={{ fontFamily: 'system-ui, sans-serif', background: '#F8FAFC', minHeight: '100vh' }}>
+      {/* Header */}
+      <nav style={{ background: 'white', padding: '1.5rem 2rem', borderBottom: '1px solid #E2E8F0' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <h1 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#334155' }}>FixEasy</h1>
+          <button style={{ background: '#334155', color: 'white', border: 'none', padding: '0.75rem 1.5rem', borderRadius: '8px', fontWeight: '600', cursor: 'pointer' }}>Get Started</button>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section style={{ padding: '4rem 2rem' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', background: 'white', borderRadius: '24px', padding: '3rem', boxShadow: '0 8px 32px rgba(0,0,0,0.08)', display: 'flex', alignItems: 'center', gap: '4rem', flexWrap: 'wrap' }}>
+          <div style={{ flex: 1, minWidth: '300px' }}>
+            <h2 style={{ fontSize: '3rem', fontWeight: '800', marginBottom: '1.5rem', color: '#0F172A', lineHeight: '1.2' }}>
+              All Home Services,<br />One Tap Away
+            </h2>
+            <p style={{ fontSize: '1.2rem', color: '#64748B', marginBottom: '2rem', lineHeight: '1.6' }}>
+              Book trusted professionals for any job, instantly.
+            </p>
+            <button style={{ background: '#334155', color: 'white', border: 'none', padding: '1rem 2.5rem', borderRadius: '12px', fontWeight: '700', fontSize: '1.1rem', boxShadow: '0 4px 16px rgba(51,65,85,0.3)', cursor: 'pointer' }}>
+              Book Now
+            </button>
+          </div>
+          <div style={{ flex: 1, minWidth: '300px', textAlign: 'center' }}>
+            <img src="/images/worker-illustration.png.png" alt="FixEasy professionals" style={{ width: '100%', maxWidth: '400px', borderRadius: '20px', boxShadow: '0 8px 24px rgba(0,0,0,0.1)' }} />
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function OldDesign2() {
   const services = [
     { name: 'Electricians', icon: '⚡', color: '#F59E0B' },
     { name: 'Cleaning Crews', icon: '✨', color: '#10B981' },

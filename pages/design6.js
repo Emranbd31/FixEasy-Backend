@@ -1,4 +1,38 @@
 export default function Design6() {
+  return (
+    <div style={{ fontFamily: 'system-ui, sans-serif', background: '#ECFDF5', minHeight: '100vh' }}>
+      {/* Header */}
+      <nav style={{ background: 'white', padding: '1.5rem 2rem', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <h1 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#059669' }}>FixEasy</h1>
+          <button style={{ background: '#059669', color: 'white', border: 'none', padding: '0.75rem 1.5rem', borderRadius: '8px', fontWeight: '600', cursor: 'pointer' }}>Book Now</button>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section style={{ padding: '4rem 2rem' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', background: 'white', borderRadius: '24px', padding: '3rem', boxShadow: '0 8px 32px rgba(0,0,0,0.08)', display: 'flex', alignItems: 'center', gap: '4rem', flexWrap: 'wrap' }}>
+          <div style={{ flex: 1, minWidth: '300px' }}>
+            <h2 style={{ fontSize: '3rem', fontWeight: '800', marginBottom: '1.5rem', color: '#065F46', lineHeight: '1.2' }}>
+              Your Home,<br />Our Priority
+            </h2>
+            <p style={{ fontSize: '1.2rem', color: '#047857', marginBottom: '2rem', lineHeight: '1.6' }}>
+              Experience the best home services with FixEasy.
+            </p>
+            <button style={{ background: '#059669', color: 'white', border: 'none', padding: '1rem 2.5rem', borderRadius: '12px', fontWeight: '700', fontSize: '1.1rem', boxShadow: '0 4px 16px rgba(5,150,105,0.3)', cursor: 'pointer' }}>
+              Book Now
+            </button>
+          </div>
+          <div style={{ flex: 1, minWidth: '300px', textAlign: 'center' }}>
+            <img src="/images/worker-illustration.png.png" alt="FixEasy professionals" style={{ width: '100%', maxWidth: '400px', borderRadius: '20px', boxShadow: '0 8px 24px rgba(0,0,0,0.1)' }} />
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function OldDesign6() {
   const services = [
     { name: 'Electricians', icon: '⚡' },
     { name: 'Cleaning', icon: '✨' },
