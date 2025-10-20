@@ -1,6 +1,3 @@
-
-import Hero from '../components/Hero'
-import '../styles/services.css';
 import Image from 'next/image'
 
 export default function Home() {
@@ -38,7 +35,12 @@ export default function Home() {
   ];
   return (
     <div>
-      <Hero />
+      <header className="hero">
+        <div className="hero-content">
+          <h1>Trusted Professionals. Verified for Your Peace of Mind.</h1>
+          <p>Easily book reliable home services in your area. All professionals are vetted to ensure your safety.</p>
+        </div>
+      </header>
       <main className="container" id="services">
         <h2 className="section-title">Popular Home Services</h2>
         <div className="grid">
