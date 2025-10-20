@@ -1,16 +1,41 @@
 
 import Hero from '../components/Hero'
+import '../styles/services.css';
 import Image from 'next/image'
 
-export default function Home(){
-  const services=[
-    {name:'Plumbing',icon:'/icons/plumbing.svg'},
-    {name:'Cleaning',icon:'/icons/cleaning.svg'},
-    {name:'Electrical',icon:'/icons/electrical.svg'},
-    {name:'Painting',icon:'/icons/painting.svg'},
-    {name:'Gardening',icon:'/icons/gardening.svg'},
-    {name:'Moving Help',icon:'/icons/moving.svg'},
-  ]
+export default function Home() {
+  const services = [
+    {
+      name: 'Electricians',
+      image: '/images/services/electrician.webp',
+      description: 'Emergency electricians on call',
+    },
+    {
+      name: 'Cleaning Crews',
+      image: '/images/services/cleaning.webp',
+      description: 'Hotel-level cleaning teams',
+    },
+    {
+      name: 'Gardeners',
+      image: '/images/services/gardening.webp',
+      description: 'Gardens cared for all year',
+    },
+    {
+      name: 'Carpenters',
+      image: '/images/services/carpenter.webp',
+      description: 'Joiners for bespoke storage',
+    },
+    {
+      name: 'Roofing Teams',
+      image: '/images/services/roofing.webp',
+      description: 'Roof and gutter specialists',
+    },
+    {
+      name: 'Tech Support',
+      image: '/images/services/tech.webp',
+      description: 'Tech support at your doorstep',
+    },
+  ];
   return (
     <div>
       <Hero />
@@ -19,9 +44,18 @@ export default function Home(){
         <div className="grid">
           {services.map(s => (
             <article className="card" key={s.name}>
-              <Image src={s.icon} width={56} height={56} alt={s.name} className="icon" />
+              <div className="card-image-wrapper">
+                <Image
+                  src={s.image}
+                  width={300}
+                  height={300}
+                  alt={s.name}
+                  className="card-image"
+                />
+                <div className="card-gradient" />
+              </div>
               <h3>{s.name}</h3>
-              <p>From €50</p>
+              <p>{s.description}</p>
               <span className="badge">Verified</span>
             </article>
           ))}
@@ -29,5 +63,5 @@ export default function Home(){
       </main>
       <footer className="footer">© {new Date().getFullYear()} FixEasy Ireland</footer>
     </div>
-  )
+  );
 }
