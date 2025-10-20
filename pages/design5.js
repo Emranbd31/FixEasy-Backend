@@ -42,7 +42,7 @@ export default function Design5() {
 
       {/* Hero */}
       <section style={{
-        background: 'linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%)',
+        background: 'linear-gradient(135deg, #1E40AF 0%, #F97316 100%)',
         color: 'white',
         padding: '5rem 2rem'
       }}>
@@ -66,7 +66,7 @@ export default function Design5() {
             </p>
             <button style={{
               background: 'white',
-              color: '#1E40AF',
+              color: '#F97316',
               border: 'none',
               padding: '1rem 2.5rem',
               borderRadius: '4px',
@@ -81,8 +81,12 @@ export default function Design5() {
             background: 'rgba(255,255,255,0.1)',
             padding: '2rem',
             borderRadius: '8px',
-            backdropFilter: 'blur(10px)'
+            backdropFilter: 'blur(10px)',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center'
           }}>
+            <img src="/images/worker-illustration.png" alt="FixEasy professionals" style={{ width: '180px', marginBottom: '1.5rem', borderRadius: '12px' }} />
             <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Why Choose Us</h3>
             <ul style={{ listStyle: 'none', lineHeight: '2' }}>
               <li>✓ Licensed & Insured Professionals</li>
