@@ -11,25 +11,30 @@ export default function StatusPage() {
   const [supabase, setSupabase] = useState<string>("Checking...");
 
   useEffect(() => {
-    // Check backend with GET and look for welcome message
-    fetch("https://fixeasy-backend.onrender.com", { method: "GET" })
-      .then(async (res) => {
-        if (!res.ok) return setBackend(STATUS.FAIL);
-        try {
-          const data = await res.json();
-          if (
-            typeof data.message === "string" &&
-            data.message.includes("Backend is live")
-          ) {
-            setBackend(STATUS.OK);
-          } else {
+    // Check backend using environment variable
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    if (apiUrl) {
+      fetch(`${apiUrl}/health`, { method: "GET" })
+        .then(async (res) => {
+          if (!res.ok) return setBackend(STATUS.FAIL);
+          try {
+            const data = await res.json();
+            if (
+              typeof data.message === "string" &&
+              data.message.includes("Backend is live")
+            ) {
+              setBackend(STATUS.OK);
+            } else {
+              setBackend(STATUS.FAIL);
+            }
+          } catch {
             setBackend(STATUS.FAIL);
           }
-        } catch {
-          setBackend(STATUS.FAIL);
-        }
-      })
-      .catch(() => setBackend(STATUS.FAIL));
+        })
+        .catch(() => setBackend(STATUS.FAIL));
+    } else {
+      setBackend(STATUS.FAIL);
+    }
     // Check Supabase
     const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
     if (supabaseUrl) {
