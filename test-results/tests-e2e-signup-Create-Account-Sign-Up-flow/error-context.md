@@ -1,0 +1,151 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "🛠️ FixEasy" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e6]:
+            - generic [ref=e7]: 🛠️
+            - generic [ref=e8]: FixEasy
+        - generic [ref=e10]: "🏆 Ireland's #1 Home Service Platform"
+        - generic [ref=e11]:
+          - link "Services" [ref=e12] [cursor=pointer]:
+            - /url: /#services
+          - link "How It Works" [ref=e13] [cursor=pointer]:
+            - /url: /#how-it-works
+          - link "Login" [ref=e14] [cursor=pointer]:
+            - /url: /login
+          - link "Sign Up" [ref=e15] [cursor=pointer]:
+            - /url: /signup
+          - link "Book Now" [ref=e16] [cursor=pointer]:
+            - /url: /book
+            - button "Book Now" [ref=e17]
+  - generic [ref=e19]:
+    - heading "404" [level=1] [ref=e20]
+    - heading "This page could not be found." [level=2] [ref=e22]
+  - contentinfo [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - generic [ref=e27]:
+          - generic [ref=e28]:
+            - generic [ref=e29]: 🛠️
+            - heading "FixEasy" [level=3] [ref=e30]
+          - paragraph [ref=e31]: Ireland's leading home service platform. Connect with trusted professionals for all your home needs. Fast, reliable, and affordable.
+          - generic [ref=e32]:
+            - link "Twitter" [ref=e33] [cursor=pointer]:
+              - /url: https://twitter.com
+              - text: 🐦
+            - link "Facebook" [ref=e34] [cursor=pointer]:
+              - /url: https://facebook.com
+              - text: 📘
+            - link "Instagram" [ref=e35] [cursor=pointer]:
+              - /url: https://instagram.com
+              - text: 📸
+            - link "LinkedIn" [ref=e36] [cursor=pointer]:
+              - /url: https://linkedin.com
+              - text: 💼
+        - generic [ref=e37]:
+          - heading "Popular Services" [level=4] [ref=e38]
+          - list [ref=e39]:
+            - listitem [ref=e40]:
+              - link "→ Cleaning" [ref=e41] [cursor=pointer]:
+                - /url: /book
+                - generic [ref=e42]: →
+                - text: Cleaning
+            - listitem [ref=e43]:
+              - link "→ Handyman" [ref=e44] [cursor=pointer]:
+                - /url: /book
+                - generic [ref=e45]: →
+                - text: Handyman
+            - listitem [ref=e46]:
+              - link "→ Plumbing" [ref=e47] [cursor=pointer]:
+                - /url: /book
+                - generic [ref=e48]: →
+                - text: Plumbing
+            - listitem [ref=e49]:
+              - link "→ Electrical" [ref=e50] [cursor=pointer]:
+                - /url: /book
+                - generic [ref=e51]: →
+                - text: Electrical
+            - listitem [ref=e52]:
+              - link "→ Painting" [ref=e53] [cursor=pointer]:
+                - /url: /book
+                - generic [ref=e54]: →
+                - text: Painting
+            - listitem [ref=e55]:
+              - link "→ Gardening" [ref=e56] [cursor=pointer]:
+                - /url: /book
+                - generic [ref=e57]: →
+                - text: Gardening
+        - generic [ref=e58]:
+          - heading "Company" [level=4] [ref=e59]
+          - list [ref=e60]:
+            - listitem [ref=e61]:
+              - link "→ How It Works" [ref=e62] [cursor=pointer]:
+                - /url: /#how-it-works
+                - generic [ref=e63]: →
+                - text: How It Works
+            - listitem [ref=e64]:
+              - link "→ About Us" [ref=e65] [cursor=pointer]:
+                - /url: /about
+                - generic [ref=e66]: →
+                - text: About Us
+            - listitem [ref=e67]:
+              - link "→ Become a Pro" [ref=e68] [cursor=pointer]:
+                - /url: /register/professional
+                - generic [ref=e69]: →
+                - text: Become a Pro
+            - listitem [ref=e70]:
+              - link "→ Careers" [ref=e71] [cursor=pointer]:
+                - /url: /careers
+                - generic [ref=e72]: →
+                - text: Careers
+            - listitem [ref=e73]:
+              - link "→ Blog" [ref=e74] [cursor=pointer]:
+                - /url: /blog
+                - generic [ref=e75]: →
+                - text: Blog
+            - listitem [ref=e76]:
+              - link "→ Help Center" [ref=e77] [cursor=pointer]:
+                - /url: /help
+                - generic [ref=e78]: →
+                - text: Help Center
+        - generic [ref=e79]:
+          - heading "Contact" [level=4] [ref=e80]
+          - list [ref=e81]:
+            - listitem [ref=e82]:
+              - generic [ref=e83]: 📍
+              - generic [ref=e84]: Dublin, Ireland
+            - listitem [ref=e85]:
+              - generic [ref=e86]: 📧
+              - link "support@fixeasy.irish" [ref=e87] [cursor=pointer]:
+                - /url: mailto:support@fixeasy.irish
+            - listitem [ref=e88]:
+              - generic [ref=e89]: 📞
+              - link "+353 (0) 123 4567" [ref=e90] [cursor=pointer]:
+                - /url: tel:+353
+            - listitem [ref=e91]:
+              - generic [ref=e92]: ⏰
+              - generic [ref=e93]:
+                - text: "Mon-Fri: 8AM-8PM"
+                - text: "Sat-Sun: 9AM-6PM"
+      - generic [ref=e94]:
+        - generic [ref=e95]: 🛡️ Insured
+        - generic [ref=e96]: ✅ Verified Pros
+        - generic [ref=e97]: ⭐ 4.9/5 Rating
+        - generic [ref=e98]: 🇮🇪 Irish Owned
+        - generic [ref=e99]: 💳 Secure Payment
+      - generic [ref=e101]:
+        - paragraph [ref=e102]: © 2025 FixEasy Ireland. All rights reserved.
+        - generic [ref=e103]:
+          - link "Terms of Service" [ref=e104] [cursor=pointer]:
+            - /url: /terms
+          - link "Privacy Policy" [ref=e105] [cursor=pointer]:
+            - /url: /privacy
+          - link "Cookie Policy" [ref=e106] [cursor=pointer]:
+            - /url: /cookies
+  - alert [ref=e107]
+```

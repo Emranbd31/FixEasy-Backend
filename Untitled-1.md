@@ -1,0 +1,3 @@
+NEXT_PUBLIC_SUPABASE_URL=https://wphmhlrttmzsmngysfws.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=nXtEMR5cpNwK8IijCSivNY/2gWA+7hCkL1dAyIx6eFjJ3Fy3fRCm3XWh2ekYyraNe/lLYbafxN0jb4PFazXAUw==
+NEXT_PUBLIC_API_URL=https://api.fixeasy.irish

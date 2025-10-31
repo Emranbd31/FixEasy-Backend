@@ -1,0 +1,360 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "🛠️ FixEasy" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e6]:
+            - generic [ref=e7]: 🛠️
+            - generic [ref=e8]: FixEasy
+        - generic [ref=e10]: "🏆 Ireland's #1 Home Service Platform"
+        - generic [ref=e11]:
+          - link "Services" [ref=e12] [cursor=pointer]:
+            - /url: /#services
+          - link "How It Works" [ref=e13] [cursor=pointer]:
+            - /url: /#how-it-works
+          - link "Login" [ref=e14] [cursor=pointer]:
+            - /url: /login
+          - link "Sign Up" [ref=e15] [cursor=pointer]:
+            - /url: /signup
+          - link "Book Now" [ref=e16] [cursor=pointer]:
+            - /url: /book
+            - button "Book Now" [ref=e17]
+  - generic [ref=e19]:
+    - generic [ref=e20]:
+      - heading "Become a FixEasy Professional" [level=1] [ref=e21]
+      - paragraph [ref=e22]: Join Ireland's leading home services platform and start getting jobs today
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - heading "1 Personal Information" [level=2] [ref=e26]:
+          - generic [ref=e27]: "1"
+          - text: Personal Information
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - generic [ref=e30]: Full Name *
+            - textbox "John Doe" [ref=e31]: Test Pro
+          - generic [ref=e32]:
+            - generic [ref=e33]: Phone Number *
+            - textbox "+353 87 123 4567" [ref=e34]: "0891234567"
+          - generic [ref=e35]:
+            - generic [ref=e36]: Email Address *
+            - textbox "john@example.com" [ref=e37]: emranbd31+pro@gmail.com
+          - generic [ref=e38]:
+            - generic [ref=e39]: Password *
+            - textbox "Min. 8 chars, 1 uppercase, 1 number, 1 symbol" [ref=e40]: Test1234!
+          - generic [ref=e41]:
+            - generic [ref=e42]: Confirm Password *
+            - textbox "Re-enter password" [ref=e43]: Test1234!
+      - generic [ref=e45]:
+        - button "Google logo Sign up with Google" [ref=e46] [cursor=pointer]:
+          - img "Google logo" [ref=e47]
+          - text: Sign up with Google
+        - button "Apple logo Sign up with Apple" [ref=e48] [cursor=pointer]:
+          - img "Apple logo" [ref=e49]
+          - text: Sign up with Apple
+      - separator [ref=e50]
+      - generic [ref=e51]:
+        - heading "2 Service Details" [level=2] [ref=e52]:
+          - generic [ref=e53]: "2"
+          - text: Service Details
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Service Category *
+            - combobox [ref=e57]:
+              - option "Select your primary service..."
+              - option "Cleaning"
+              - option "Handyman"
+              - option "Plumbing" [selected]
+              - option "Electrical"
+              - option "Painting"
+              - option "Gardening"
+              - option "Moving"
+              - option "Carpentry"
+              - option "Appliance Repair"
+              - option "HVAC"
+              - option "Pest Control"
+              - option "Locksmith"
+              - option "Welding"
+              - option "CCTV Installation"
+              - option "Solar Panels"
+              - option "Builder"
+              - option "Roofing"
+              - option "Flooring"
+              - option "Tiling"
+              - option "Plastering"
+              - option "Window Cleaning"
+              - option "Pressure Washing"
+              - option "Chimney Sweep"
+              - option "Gutter Cleaning"
+              - option "Air Conditioning"
+              - option "Roof Cleaning"
+              - option "Carpet Cleaning"
+              - option "Other (not listed)"
+          - generic [ref=e58]:
+            - generic [ref=e59]: Years of Experience *
+            - spinbutton [ref=e60]: "7"
+          - generic [ref=e61]:
+            - generic [ref=e62]: Hourly Rate (€) *
+            - spinbutton [ref=e63]: "50"
+          - generic [ref=e64]:
+            - generic [ref=e65]: Service Area *
+            - textbox "e.g., Dublin & Surrounding Areas, Cork City, All Ireland" [ref=e66]: Dublin
+            - paragraph [ref=e67]: Specify counties, cities, or Eircodes you serve
+          - generic [ref=e68]:
+            - generic [ref=e69]: Working Hours
+            - textbox "e.g., 08:00 - 18:00, Flexible, On Call" [ref=e70]
+            - paragraph [ref=e71]: Enter your typical working hours or availability
+          - generic [ref=e72]:
+            - generic [ref=e73]: Days Available
+            - generic [ref=e74]:
+              - generic [ref=e75]:
+                - checkbox "Monday" [ref=e76]
+                - text: Monday
+              - generic [ref=e77]:
+                - checkbox "Tuesday" [ref=e78]
+                - text: Tuesday
+              - generic [ref=e79]:
+                - checkbox "Wednesday" [ref=e80]
+                - text: Wednesday
+              - generic [ref=e81]:
+                - checkbox "Thursday" [ref=e82]
+                - text: Thursday
+              - generic [ref=e83]:
+                - checkbox "Friday" [ref=e84]
+                - text: Friday
+              - generic [ref=e85]:
+                - checkbox "Saturday" [ref=e86]
+                - text: Saturday
+              - generic [ref=e87]:
+                - checkbox "Sunday" [ref=e88]
+                - text: Sunday
+            - paragraph [ref=e89]: Select all days you are available to work
+          - generic [ref=e90]:
+            - generic [ref=e91]: Abilities / Skills
+            - textbox "e.g., Safe Electric certified, RGII gas installer, roof repairs, deep cleaning, etc." [ref=e92]
+            - paragraph [ref=e93]: Briefly describe your main skills or abilities
+      - separator [ref=e94]
+      - generic [ref=e95]:
+        - heading "3 Qualification or Trade Certification (Recommended for skilled trades)" [level=2] [ref=e96]:
+          - generic [ref=e97]: "3"
+          - text: Qualification or Trade Certification
+          - generic [ref=e98]: (Recommended for skilled trades)
+        - paragraph [ref=e100]: Some trades must have professional certification under Irish or EU regulations. Upload your certificate below if applicable.
+        - table [ref=e102]:
+          - rowgroup [ref=e103]:
+            - row "Trade Required Certification" [ref=e104]:
+              - cell "Trade" [ref=e105]
+              - cell "Required Certification" [ref=e106]
+          - rowgroup [ref=e107]:
+            - row "Electrician Safe Electric (RECI) registration" [ref=e108]:
+              - cell "Electrician" [ref=e109]
+              - cell "Safe Electric (RECI) registration" [ref=e110]
+            - row "Plumber / Heating RGII Gas Installer ID (for gas work)" [ref=e111]:
+              - cell "Plumber / Heating" [ref=e112]
+              - cell "RGII Gas Installer ID (for gas work)" [ref=e113]
+            - row "Builder / Roofer CIF or SOLAS qualification (recommended)" [ref=e114]:
+              - cell "Builder / Roofer" [ref=e115]
+              - cell "CIF or SOLAS qualification (recommended)" [ref=e116]
+            - row "Pest Control PMU / IPCA certification" [ref=e117]:
+              - cell "Pest Control" [ref=e118]
+              - cell "PMU / IPCA certification" [ref=e119]
+            - row "Locksmith PSA (Private Security Authority) Licence" [ref=e120]:
+              - cell "Locksmith" [ref=e121]
+              - cell "PSA (Private Security Authority) Licence" [ref=e122]
+            - row "CCTV / Alarm Installer PSA Licence (mandatory)" [ref=e123]:
+              - cell "CCTV / Alarm Installer" [ref=e124]
+              - cell "PSA Licence (mandatory)" [ref=e125]
+            - row "Cleaning / Handyman / Painting No licence required, but insurance advised" [ref=e126]:
+              - cell "Cleaning / Handyman / Painting" [ref=e127]
+              - cell "No licence required, but insurance advised" [ref=e128]
+        - paragraph [ref=e129]: If you have a trade certificate, license, or diploma, please upload it below (optional).
+      - generic [ref=e130]:
+        - heading "4 Verification Documents" [level=2] [ref=e131]:
+          - generic [ref=e132]: "4"
+          - text: Verification Documents
+        - paragraph [ref=e134]:
+          - strong [ref=e135]: "📋 Required:"
+          - text: Photo ID is mandatory for account verification. Additional documents help build trust with customers and increase your bookings.
+        - generic [ref=e136]:
+          - generic [ref=e137]:
+            - generic [ref=e138]: Profile Photo
+            - button "Choose File" [ref=e139] [cursor=pointer]
+            - paragraph [ref=e140]: A clear headshot helps customers trust you
+          - generic [ref=e141]:
+            - generic [ref=e142]: Photo ID *
+            - button "Choose File" [active] [ref=e143] [cursor=pointer]
+            - paragraph [ref=e144]: Passport, Driver's License, or National ID
+          - generic [ref=e145]:
+            - generic [ref=e146]: Proof of Address (Optional)
+            - button "Choose File" [ref=e147] [cursor=pointer]
+            - paragraph [ref=e148]: Utility bill or bank statement
+          - generic [ref=e149]:
+            - generic [ref=e150]:
+              - text: Qualifications/Certifications
+              - generic [ref=e151]: (Required for Plumbing)
+            - button "Choose File" [ref=e152] [cursor=pointer]
+            - paragraph [ref=e153]: RGII Gas Installer ID (for gas work)
+          - generic [ref=e154]:
+            - generic [ref=e155]: Insurance Certificate (Optional - Recommended)
+            - button "Choose File" [ref=e156] [cursor=pointer]
+            - paragraph [ref=e157]: Public liability or professional indemnity insurance
+          - generic [ref=e158]:
+            - generic [ref=e159]: Portfolio/Work Samples (Optional - Multiple files allowed)
+            - button "Choose File" [ref=e160] [cursor=pointer]
+            - paragraph [ref=e161]: Photos of your previous work to showcase your skills
+      - generic [ref=e162]:
+        - paragraph [ref=e164]:
+          - text: By clicking "Create Account", you agree to FixEasy's
+          - link "Terms of Service" [ref=e165] [cursor=pointer]:
+            - /url: /terms
+          - text: and acknowledge our
+          - link "Privacy Policy" [ref=e166] [cursor=pointer]:
+            - /url: /privacy
+          - text: . Your account will be reviewed and activated within 24-48 hours.
+        - button "🚀 Create Professional Account" [ref=e167] [cursor=pointer]
+        - paragraph [ref=e168]:
+          - text: Already have an account?
+          - link "Sign In" [ref=e169] [cursor=pointer]:
+            - /url: /login
+          - text: "|"
+          - link "Forgot/Reset Password?" [ref=e170] [cursor=pointer]:
+            - /url: /forgot-password
+    - generic [ref=e171]:
+      - generic [ref=e172]:
+        - generic [ref=e173]: 💼
+        - heading "Get More Jobs" [level=3] [ref=e174]
+        - paragraph [ref=e175]: Connect with customers across Ireland looking for your services
+      - generic [ref=e176]:
+        - generic [ref=e177]: ⚡
+        - heading "Fast Payments" [level=3] [ref=e178]
+        - paragraph [ref=e179]: Secure payment processing with quick transfers to your account
+      - generic [ref=e180]:
+        - generic [ref=e181]: ⭐
+        - heading "Build Your Brand" [level=3] [ref=e182]
+        - paragraph [ref=e183]: Showcase your skills, get reviews, and grow your reputation
+  - contentinfo [ref=e184]:
+    - generic [ref=e185]:
+      - generic [ref=e186]:
+        - generic [ref=e188]:
+          - generic [ref=e189]:
+            - generic [ref=e190]: 🛠️
+            - heading "FixEasy" [level=3] [ref=e191]
+          - paragraph [ref=e192]: Ireland's leading home service platform. Connect with trusted professionals for all your home needs. Fast, reliable, and affordable.
+          - generic [ref=e193]:
+            - link "Twitter" [ref=e194] [cursor=pointer]:
+              - /url: https://twitter.com
+              - text: 🐦
+            - link "Facebook" [ref=e195] [cursor=pointer]:
+              - /url: https://facebook.com
+              - text: 📘
+            - link "Instagram" [ref=e196] [cursor=pointer]:
+              - /url: https://instagram.com
+              - text: 📸
+            - link "LinkedIn" [ref=e197] [cursor=pointer]:
+              - /url: https://linkedin.com
+              - text: 💼
+        - generic [ref=e198]:
+          - heading "Popular Services" [level=4] [ref=e199]
+          - list [ref=e200]:
+            - listitem [ref=e201]:
+              - link "→ Cleaning" [ref=e202] [cursor=pointer]:
+                - /url: /book
+                - generic [ref=e203]: →
+                - text: Cleaning
+            - listitem [ref=e204]:
+              - link "→ Handyman" [ref=e205] [cursor=pointer]:
+                - /url: /book
+                - generic [ref=e206]: →
+                - text: Handyman
+            - listitem [ref=e207]:
+              - link "→ Plumbing" [ref=e208] [cursor=pointer]:
+                - /url: /book
+                - generic [ref=e209]: →
+                - text: Plumbing
+            - listitem [ref=e210]:
+              - link "→ Electrical" [ref=e211] [cursor=pointer]:
+                - /url: /book
+                - generic [ref=e212]: →
+                - text: Electrical
+            - listitem [ref=e213]:
+              - link "→ Painting" [ref=e214] [cursor=pointer]:
+                - /url: /book
+                - generic [ref=e215]: →
+                - text: Painting
+            - listitem [ref=e216]:
+              - link "→ Gardening" [ref=e217] [cursor=pointer]:
+                - /url: /book
+                - generic [ref=e218]: →
+                - text: Gardening
+        - generic [ref=e219]:
+          - heading "Company" [level=4] [ref=e220]
+          - list [ref=e221]:
+            - listitem [ref=e222]:
+              - link "→ How It Works" [ref=e223] [cursor=pointer]:
+                - /url: /#how-it-works
+                - generic [ref=e224]: →
+                - text: How It Works
+            - listitem [ref=e225]:
+              - link "→ About Us" [ref=e226] [cursor=pointer]:
+                - /url: /about
+                - generic [ref=e227]: →
+                - text: About Us
+            - listitem [ref=e228]:
+              - link "→ Become a Pro" [ref=e229] [cursor=pointer]:
+                - /url: /register/professional
+                - generic [ref=e230]: →
+                - text: Become a Pro
+            - listitem [ref=e231]:
+              - link "→ Careers" [ref=e232] [cursor=pointer]:
+                - /url: /careers
+                - generic [ref=e233]: →
+                - text: Careers
+            - listitem [ref=e234]:
+              - link "→ Blog" [ref=e235] [cursor=pointer]:
+                - /url: /blog
+                - generic [ref=e236]: →
+                - text: Blog
+            - listitem [ref=e237]:
+              - link "→ Help Center" [ref=e238] [cursor=pointer]:
+                - /url: /help
+                - generic [ref=e239]: →
+                - text: Help Center
+        - generic [ref=e240]:
+          - heading "Contact" [level=4] [ref=e241]
+          - list [ref=e242]:
+            - listitem [ref=e243]:
+              - generic [ref=e244]: 📍
+              - generic [ref=e245]: Dublin, Ireland
+            - listitem [ref=e246]:
+              - generic [ref=e247]: 📧
+              - link "support@fixeasy.irish" [ref=e248] [cursor=pointer]:
+                - /url: mailto:support@fixeasy.irish
+            - listitem [ref=e249]:
+              - generic [ref=e250]: 📞
+              - link "+353 (0) 123 4567" [ref=e251] [cursor=pointer]:
+                - /url: tel:+353
+            - listitem [ref=e252]:
+              - generic [ref=e253]: ⏰
+              - generic [ref=e254]:
+                - text: "Mon-Fri: 8AM-8PM"
+                - text: "Sat-Sun: 9AM-6PM"
+      - generic [ref=e255]:
+        - generic [ref=e256]: 🛡️ Insured
+        - generic [ref=e257]: ✅ Verified Pros
+        - generic [ref=e258]: ⭐ 4.9/5 Rating
+        - generic [ref=e259]: 🇮🇪 Irish Owned
+        - generic [ref=e260]: 💳 Secure Payment
+      - generic [ref=e262]:
+        - paragraph [ref=e263]: © 2025 FixEasy Ireland. All rights reserved.
+        - generic [ref=e264]:
+          - link "Terms of Service" [ref=e265] [cursor=pointer]:
+            - /url: /terms
+          - link "Privacy Policy" [ref=e266] [cursor=pointer]:
+            - /url: /privacy
+          - link "Cookie Policy" [ref=e267] [cursor=pointer]:
+            - /url: /cookies
+  - alert [ref=e268]
+```
