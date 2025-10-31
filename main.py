@@ -11,7 +11,8 @@ app.add_middleware(
 	CORSMiddleware,
 	allow_origins=[
 		"https://fixeasy.irish",
-		"https://www.fixeasy.irish"
+		"https://www.fixeasy.irish",
+		"https://fixeasy-backend.onrender.com"
 	],
 	allow_credentials=True,
 	allow_methods=["*"],
