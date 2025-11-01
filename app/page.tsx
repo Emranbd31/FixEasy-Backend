@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import React from 'react';
 import { motion } from 'framer-motion';
-import EmergencyButton from '../components/EmergencyButton';
 
 export default function HomePage() {
   return (
@@ -623,7 +622,6 @@ export default function HomePage() {
       </section>
 
 
-      <EmergencyButton />
     </>
   );
 }
