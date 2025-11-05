@@ -3,3 +3,5 @@ uvicorn
 python-multipart
 pydantic
 supabase
+python-dotenv
+python-jose[cryptography]

@@ -1,7 +1,7 @@
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routes import admin
+from routes import admin, admin_login
 
 
 app = FastAPI()
@@ -20,6 +20,7 @@ app.add_middleware(
 )
 
 
+app.include_router(admin_login.router)
 app.include_router(admin.router, prefix="/admin")
 
 
